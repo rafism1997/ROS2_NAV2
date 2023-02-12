@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="amr_enclosure_design_completed" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find amr_enclosure_design_completed_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find amr_enclosure_design_completed_description)/urdf/amr_enclosure_design_completed.trans" />
+<xacro:include filename="$(find amr_enclosure_design_completed_description)/urdf/amr_enclosure_design_completed.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.012987500466732187 0.001871064981612833 0.1170529270375456" rpy="0 0 0"/>
+    <mass value="6.701670598492796"/>
+    <inertia ixx="0.137922" iyy="0.18314" izz="0.321052" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find amr_enclosure_design_completed_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find amr_enclosure_design_completed_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>
