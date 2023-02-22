@@ -105,3 +105,17 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ```
 
 If we want to get access to the parameters files for different ros pkgs , we need to go inside the share folder.
+
+
+```bash 
+cd /opt/ros/foxy/share/turtlebot3_navigation2/param 
+```
+
+Inside the param folder move to waffle.yaml file and change the robot_model_type 
+
+```yaml
+robot_model_type: "differential"
+		to
+robot_model_type: "nav2_amcl::DifferentialMotionModel"
+```
+

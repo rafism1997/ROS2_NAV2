@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "02559b5546b81da5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c77e194300c3f353",
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ROS2 NAV2.md",
+                "file": "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ROS2 NAV2.md",
+                "file": "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ROS2 NAV2.md"
+                "file": "Robot_Navigation using generated map/Robot Navigation with generated Map.md"
               }
             }
           }
@@ -147,6 +159,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e4072c30a6d328d",
-  "lastOpenFiles": []
+  "active": "02559b5546b81da5",
+  "lastOpenFiles": [
+    "Global_planner.png",
+    "local_planner.png",
+    "local_and_global_planner.png",
+    "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
+    "ROS2 NAV2.md"
+  ]
 }
