@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -161,10 +161,10 @@
   },
   "active": "02559b5546b81da5",
   "lastOpenFiles": [
+    "ROS2 NAV2.md",
+    "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
     "Global_planner.png",
     "local_planner.png",
-    "local_and_global_planner.png",
-    "Robot_Navigation using generated map/Robot Navigation with generated Map.md",
-    "ROS2 NAV2.md"
+    "local_and_global_planner.png"
   ]
 }

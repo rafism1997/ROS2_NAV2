@@ -1,5 +1,4 @@
 
-
 Continuation of  
 [[ROS2 NAV2]]
 
@@ -61,5 +60,16 @@ If we give a Navigation goal out of the map then the robot may abort the path an
 
 The green arrows indicate the path and direction in which the robot should manuever. 
 
-### Dynamic Obstacle Avoidance 
+### Global and Local Planner 
 
+The global planner comprises of a global costmap which in turn helps the robot to understand the obstacles and hinderances on its trajectory more properly. 
+
+Each pixel is an obstacle or wall is going to have the highest cost possible.
+
+Inflation radius around the obstacle is also present.
+
+The global path is send to the local planner/controller so that it can move accordingly.
+
+Analogy to understand what the global and local planner is : 
+
+Consider driving a car to a particular destination with GPS . GPS will give us the exact location of the destination which can be considered as a global path of a global planner. But we are in control while navigating to the destination, we can make our own decisions throughout the journey . Hence the local planner/controller can take decisions based on how to go to the destination too. 
