@@ -73,3 +73,24 @@ The global path is send to the local planner/controller so that it can move acco
 Analogy to understand what the global and local planner is : 
 
 Consider driving a car to a particular destination with GPS . GPS will give us the exact location of the destination which can be considered as a global path of a global planner. But we are in control while navigating to the destination, we can make our own decisions throughout the journey . Hence the local planner/controller can take decisions based on how to go to the destination too. 
+
+
+### TF2 package 
+
+```bash 
+ros2 run tf2_tools view_frames.py 
+```
+
+
+![[frames_page-0001.jpg]]
+
+
+The relationship between the map and base_footprint (the projection of the base_link on the ground) will be used to compute the exact location of the robot with SLAM using the laser scan from the LIDAR .
+
+The location is going to be precise over a long time but in the short term it can be quite unstable , it can jump from one point to another quickly. 
+
+Odometry : Its  basically an estimation of the robot's position using the robot's internal measurements . eg: the recorded speed of the wheels. Its going to drift over time. 
+
+In the short term we will have a smooth location , but this location will drift over time and can accumulate .
+
+The Navigation stack will take the best of both and combine so that we get the a precise location of the robot 
